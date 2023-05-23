@@ -1,0 +1,13 @@
+# --js-flags="--jitless" --disable-file-system --show-fps-counter --ui-show-fps-counter --gpu*?
+/usr/local/ungoogled-chromium/ungoogled-chromium --fake-variations-channel="canary" --no-sandbox --no-zygote \
+    --disable-setuid-sandbox \
+    --deny-elevation-for-testing --isolation-by-default --no-experiments \
+    --d3d11-null --gl-null \
+    --disable-2d-canvas-clip-aa --disable-2d-canvas-image-chromium --disable-3d-apis --disable-accelerated-2d-canvas --disable-accelerated-mjpeg-decode --disable-accelerated-video-decode --disable-accelerated-video-encode --disable-adpf --disable-canvas-aa \
+    --disable-background-networking --disable-chrome-tracing-computation --disable-component-update --disable-crash-reporter --disable-default-apps --disable-extensions \
+    --disable-gpu --disable-webgl --disable-webgl2 --disable-lazy-loading --disable-partial-raster --disable-software-rasterizer --disable-pepper-3d --disable-zero-copy --disable-speech-api \
+    --disable-webrtc-hw-decoding --disable-webrtc-hw-encoding  \
+    --ui-disable-zero-copy --ui-disable-partial-swap \
+    --js-flags="--jitless" --disable-http2 \
+    --host-rules="MAP * ~NOTFOUND,EXCLUDE proton.me,EXCLUDE *.proton.me,EXCLUDE protonmail.com,EXCLUDE *.protonmail.com,EXCLUDE protonvpn.com,EXCLUDE *.protonvpn.com" \
+    --host-resolver-rules="MAP * ~NOTFOUND,EXCLUDE proton.me,EXCLUDE *.proton.me,EXCLUDE protonmail.com,EXCLUDE *.protonmail.com,EXCLUDE protonvpn.com,EXCLUDE *.protonvpn.com"
