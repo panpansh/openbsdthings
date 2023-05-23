@@ -1,0 +1,8 @@
+Openbsd.
+An hardening starting point as a dreamer not an expert.
+
+1. write the whole directory at /usr/libexec/_hardening
+2. execute /usr/libexec/install/install.sh
+3. edit/read files, it's a wip.
+4. reboot
+5. add, edit and publish cool code and ideas here. 
