@@ -1,0 +1,5 @@
+#join NETWORKNAME wpakey KEY
+#inet 172.16.103.202 255.255.255.0
+
+join WIFI123 wpakey KEY
+inet autoconf

@@ -1,0 +1,7 @@
+/usr/libexec/_hardening/main.sh
+
+chmod -R go-rwx /root
+chown -R root:root /root
+
+ifconfig lo0 -debug -inet6 -tso -wol
+ifconfig bwfm0 -debug -inet6 -tso -wol
