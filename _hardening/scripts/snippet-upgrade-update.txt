@@ -1,0 +1,19 @@
+usermod -e 0 _syspatch
+
+# until "secondary group" fix:
+chmod o+rx /usr/bin/signify
+chmod o+rx /bin/cksum
+
+sysupgrade -s
+# -s for "snapshot"
+
+usermod -e 1 _syspatch
+
+
+# echo "\n\n[pkg_add] update everything."
+# until "secondary group" fix:
+#chmod o+rx /usr/bin/ftp
+#pkg_add -UuVvvvvv
+
+# echo "\n\n[sysmerge] update system configuration files."
+#sysmerge
